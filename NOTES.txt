@@ -1,0 +1,33 @@
+# Create Transit Gateway Infrastructure
+# 2 Regions
+# 4 VPCs
+    VPC A & B = us-east-1
+    VPC C & D = us-east-2
+# 2 Transit Gateways
+# Do Transit Gateway Peering
+# 1 subnet for each VPC 
+# 1 Instance for each VPC 
+
+
+
+# Transit Gateway
+# Transit Gateway Attachment
+# Transit Gateway Route tables
+
+
+
+FIX:
+ADD ROUTES TO ROUTE_TABLE TARGET TRANSIT GATEWAY 
+    EXAMPLE:
+        FOR VPC A, CREATE ROUTE TO VPC D, TARGET TRANSIT GATEWAY 1. 
+ALSO:
+    ASSOCIATE TRANSIT GATEWAY PEER CONNECTION TO TRANSIT GATEWAY TABLE.
+    THEN CREATE STATIC ROUTE TO OTHER VPCS IN OTHER REGION. 
+
+
+1. EDIT ROUTE TABLES  -- DONE
+2. ASSOCIATE TG PEER TO TG ROUTE TABLE   -- DONE
+3. CREATE STATIC ROUTES -- DONE
+
+
+
